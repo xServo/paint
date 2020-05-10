@@ -1,0 +1,14 @@
+body { 
+	min-height: 100%; 
+}
+#container {
+	display: grid;
+	grid-template-columns: 16;
+	grid-template-rows: 16;
+	grid-gap: 1px;
+	height: 55vw;
+	width: 99vw;
+}
+.square {
+	background-color: blue;
+}
