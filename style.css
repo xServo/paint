@@ -1,14 +1,52 @@
 body { 
 	min-height: 100%; 
+	background-color: #141D26;
 }
 #container {
 	display: grid;
 	grid-template-columns: 16;
 	grid-template-rows: 16;
 	grid-gap: 1px;
-	height: 55vw;
-	width: 99vw;
+	height: 50vw;
+	width: 50vw;
+	margin: auto;
 }
 .square {
 	background-color: blue;
+}
+h1 {
+	font-family: 'Finger Paint', cursive;
+	font-size: 75pt;
+	color: white;
+	float: left;
+	padding-left: 20px;
+}
+#reset {
+	margin-top: 20vw;
+	margin-left: -20vw;
+	padding: 20px;
+	padding-right: 500px;
+	background-color: #00acee;
+	font-size: 3em;
+}
+#yellow {
+	background-color: yellow;
+	margin-top: 30vw;
+	margin-left: -43.5vw;
+	font-size: 2.5em;
+}
+#green {
+	background-color: green;
+	margin-top: 35vw;
+	margin-left: -43.5vw;
+	font-size: 2.5em;
+}
+button {
+	float: left;
+	border-radius: 25px;
+	border-color: #243447;
+	font-family: 'Finger Paint', cursive;
+	text-align: center;
+	box-shadow: 5px 5px;
+	display: inline-block;
 }

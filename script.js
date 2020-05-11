@@ -1,12 +1,11 @@
 const container = document.querySelector("#container");
+function colorPicker (i) {
+	color = i;
+}
+color = "white";
 
-//function colorChanger(id) {
-//	console.log(i);
-//	var div = document.getElementById(id);
-//	div.style.color = "red";
-//}
 var size = prompt("Choose your grid size. (ex. 256)");
-const square = Math.sqrt(size)
+const square = Math.sqrt(size);
 var row = 1;
 var cnt = 1;
 for (i = 0; i < size; i++) {
@@ -14,7 +13,7 @@ for (i = 0; i < size; i++) {
 	div.classList.add("square");
 	div.setAttribute("id", i);
 	div.addEventListener("mouseover", function (e) {
-		e.target.style.background = "red";
+		e.target.style.background = color;
 	});
 
 	// addding to grid
@@ -29,3 +28,9 @@ for (i = 0; i < size; i++) {
 	container.appendChild(div);
 	cnt++;
 }
+let reset = document.getElementById("reset");
+reset.addEventListener('click', function(){location.reload()});
+let yellow = document.getElementById("yellow");
+yellow.addEventListener('click', function(){colorPicker("yellow")})
+let green = document.getElementById("green");
+yellow.addEventListener('click', function(){colorPicker("green")})
