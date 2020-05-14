@@ -1,11 +1,15 @@
 const container = document.querySelector("#container");
 function colorPicker (i) {
+	console.log(i);
 	color = i;
 }
-color = "white";
-
-var size = prompt("Choose your grid size. (ex. 256)");
+var color = "white";
+var size = 256;
 const square = Math.sqrt(size);
+function changeSize() {
+	var size = prompt("Choose your grid size. (default is 256)");
+	const square = Math.sqrt(size);
+}
 var row = 1;
 var cnt = 1;
 for (i = 0; i < size; i++) {
@@ -31,6 +35,16 @@ for (i = 0; i < size; i++) {
 let reset = document.getElementById("reset");
 reset.addEventListener('click', function(){location.reload()});
 let yellow = document.getElementById("yellow");
-yellow.addEventListener('click', function(){colorPicker("yellow")})
+yellow.addEventListener('click', function(){colorPicker("yellow")});
 let green = document.getElementById("green");
-yellow.addEventListener('click', function(){colorPicker("green")})
+green.addEventListener('click', function(){colorPicker("green")});
+let pink = document.getElementById("pink");
+pink.addEventListener('click', function(){colorPicker("deeppink")});
+let blue = document.getElementById("blue");
+blue.addEventListener('click', function(){colorPicker("blue")});
+let orange = document.getElementById("orange");
+orange.addEventListener('click', function(){colorPicker("orange")});
+let red = document.getElementById("red");
+red.addEventListener('click', function(){colorPicker("red")});
+let chooseSize = document.getElementById("size");
+chooseSize.addEventListener('click', function(){changeSize()});

@@ -12,7 +12,7 @@ body {
 	margin: auto;
 }
 .square {
-	background-color: blue;
+	background-color: white;
 }
 h1 {
 	font-family: 'Finger Paint', cursive;
@@ -22,8 +22,9 @@ h1 {
 	padding-left: 20px;
 }
 #reset {
+	float: left;
 	margin-top: 20vw;
-	margin-left: -20vw;
+	margin-left: -19vw;
 	padding: 20px;
 	padding-right: 500px;
 	background-color: #00acee;
@@ -32,21 +33,48 @@ h1 {
 #yellow {
 	background-color: yellow;
 	margin-top: 30vw;
-	margin-left: -43.5vw;
-	font-size: 2.5em;
 }
 #green {
 	background-color: green;
 	margin-top: 35vw;
-	margin-left: -43.5vw;
+}
+#pink {
+	background-color: deeppink;
+	margin-top: 40vw;
+}
+#blue {
+	background-color: blue;
+	margin-top: 30vw;
+	margin-left: -27vw;
+}
+#orange {
+	background-color: orange;
+	margin-top: 35vw;
+	margin-left: -27vw;
+}
+#red {
+	background-color: red;
+	margin-top: 40vw;
+	margin-left: -27vw;
+
+}
+.colorButton {
+	float: left;
 	font-size: 2.5em;
+	margin-left: -41.5vw;
+	height: 70px;
+	width: 200px;
+	margin-top: 35vw;
+}
+#size {
+	height: 120px;
+	margin-top: 37vw;
+	margin-left: -13.5vw;
+	background-color: white;
 }
 button {
-	float: left;
 	border-radius: 25px;
 	border-color: #243447;
 	font-family: 'Finger Paint', cursive;
-	text-align: center;
 	box-shadow: 5px 5px;
-	display: inline-block;
 }
